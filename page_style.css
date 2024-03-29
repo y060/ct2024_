@@ -1,11 +1,26 @@
+@font-face {
+    font-family: "DiaPro";
+    src: url(./hw01/src/DiaPro-Regular.ttf);
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url(./hw01/src/FiraCode-Regular.ttf);
+}
+
+
 body{
-    /* background: linear-gradient(45deg, #1870ed 0, #f18f88 100%); */
+    max-width: 100%;
+    height: fit-content;
+    position: relative;
     color: var(--dark-color);
     background: var(--dark-bg);
+    overflow-y: scroll;
 }
 
 .profile{
-    margin: 1rem 2rem;
+    margin: 2rem;
+    position: relative;
+    right: .3rem;
     display: flex;
     align-items: center;
     float: right;
@@ -20,21 +35,6 @@ body{
 .profile p{
     margin: 0;
     padding: 0 1rem;
-}
-
-
-.title{
-    margin-top: 5rem;
-}
-.title p{
-    color: var(--dark-teriary-color)
-}
-.title h1{
-    font-weight: bold;
-}
-.title-hr{
-    height: 2px  !important;
-    color: var(--dark-secondary-color);
 }
 
 
@@ -57,4 +57,65 @@ body{
 }
 .folder svg{
     color: var(--dark-bg)
+}
+
+
+#progress_chart{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+#my_progress{
+    transition: all .7s ease-in-out;
+}
+#progress_score{
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+}
+#my_score{
+    font-size: 3.8rem;
+    font-weight: bolder;
+    color: var(--theme-color)
+}
+#full_score{
+    color: var(--theme-color);
+    opacity: .7;
+}
+
+
+#content{
+    margin-bottom: 10rem;
+}
+.title{
+    margin-top: 2rem;
+}
+.title p{
+    color: var(--dark-teriary-color)
+}
+.title-hr{
+    height: 2px  !important;
+    margin-bottom: .5rem;
+    color: var(--dark-secondary-color);
+}
+#content h1,
+#content h2{
+    font-weight: bold;
+}
+#content h2{
+    padding-top: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--dark-secondary-color);
+}
+#content h3{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+#content p{
+    margin: 0;
+}
+#content img{
+    width: 100%;
+    margin-bottom: 1rem;
 }

@@ -9,6 +9,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="../style.css" rel="stylesheet">
     <link href="../page_style.css" rel="stylesheet">
+    <script src="../script.js"></script>
+    <script src="../page_script.js"></script>
 
     <title>作業一｜112-2 字體設計與文字編碼</title>
 </head>
@@ -23,13 +25,80 @@
         <p>@y060</p>
     </div>
 
-    <div class="container">
-        <div class="title">
-            <p>112-2 字體設計與文字編碼</p>
-            <h1>作業一</h1>
+    <main class="w-100 row flex-row-reverse justify-content-center">
+
+        <div id="progress" class="col-10 col-sm-3">
+            <div id="progress_chart">
+                <svg id="progress_pie" viewBox="0 0 100 100" style="transform: rotate(-90deg)">
+                    <circle id="track" r="35" cx="50" cy="50" fill="transparent" stroke="#2b3035" stroke-width="5px"></circle>
+                    <circle id="my_progress" r="35" cx="50" cy="50" fill="transparent" stroke="#5f7279" stroke-width="9px" stroke-linecap="round"></circle>
+                </svg>
+                <p id="progress_score">
+                    <span id="my_score"></span><span id="full_score"></span>
+                </p>
+            </div>
+            <table id="progress_table">
+                <tr>
+                    <td rowspan="7" id="總分"></td>
+                    <td><input type="checkbox" checked></td>
+                    <td class="score">2</td>
+                    <td>下載並安裝 'Fira Code' 字體。</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" checked></td>
+                    <td class="score">2</td>
+                    <td>下載並安裝 DiaPro 字體。</td>
+                </tr>
+                <tr class="table-split">
+                    <td><input type="checkbox" checked></td>
+                    <td class="score">2</td>
+                    <td>設定 VS Code 使用 'Fira Code' 字體，並開啟連字功能。</td>
+                </tr>
+                <tr class="table-split">
+                    <td><input type="checkbox" checked></td>
+                    <td class="score">2</td>
+                    <td>設定 VS Code 使用 DiaPro 字體，並開啟連字功能。</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" checked></td>
+                    <td class="score">2</td>
+                    <td>完成 HW01 作品集，寫100字心得，放到 github ct2024s 倉庫 hw01 檔案夾。</td>
+                </tr>
+            </table>
         </div>
-        <hr class="title-hr">
-    </div>
+
+        <div class="col-1"></div>
+
+        <div id="content" class="col-10 col-sm-5">
+            <div class="title">
+                <p>112-2 字體設計與文字編碼</p>
+                <h1>作業一</h1>
+            </div>
+            <hr class="title-hr">
+
+            <h2>心得</h2>
+            <p>
+                　　這次的作業很有趣，是讓我們自己更換VScode裡面的字體。可以打出一段字就直接變成符號的方式很特別！搞不好之後會有打出某一段字加上特殊符號就能將emoji打出的字體出現呢，現有比較相像的只有Adobe字體裡的「emoji one」，但那個是用選取的方式，似乎還沒有用打的出現emoji的字體出現，有點可惜。
+                <br>　　字體是個很神奇的東西，可以把「文字」變得更加好玩、客製化，也可以賦予海報等設計物靈魂，一個字體就能把風格180度大轉變，在視覺溝通這一塊字體是不可或缺的存在！
+            </p>
+
+            <h2>截圖資料</h2>
+            <p>原始圖片</p>
+            <img src="./src/0.png">
+
+            <h3>Fira Code 字體示範</h3>
+            <p>Fira Code: -> => == === != =/= <= >= <=</p>
+            <p style="font-family: 'Fira Code', 'Poppins', 'Noto Serif TC', sans-serif;">Fira Code: -> => == === != =/= <= >= <=</p>
+            <img src="./src/1.png">
+
+            <h3>DiaPro 字體示範</h3>
+            <p>DiaPro: Sleeper AllReserved GreenReserved LimitedSleeper</p>
+            <p style="font-family: 'DiaPro', 'Poppins', 'Noto Serif TC', sans-serif;">DiaPro: Sleeper AllReserved GreenReserved LimitedSleeper</p>
+            <img src="./src/2.png">
+
+        </div>
+
+    </main>
 
     <a class="folder" href="../index.html">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">

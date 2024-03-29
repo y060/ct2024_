@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "UniDreamLED";
+    src: url("./src/font/UnidreamLED.otf") format("opentype");
+}
+
 
 .bg-img{
     background-size: cover;
