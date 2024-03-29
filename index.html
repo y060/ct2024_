@@ -9,11 +9,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="./style.css" rel="stylesheet">
     <link href="./index_style.css" rel="stylesheet">
+    <script src="script.js"></script>
 
     <title>作品集｜112-2 字體設計與文字編碼</title>
 </head>
 
 <body class="bg-img">
+    <div id="preloader"></div>
+
     <div class="bg-img-mask p-0"></div>
     <div id="cursor_circle"></div>
 
@@ -160,17 +163,6 @@
     let randomNumber = Math.floor(Math.random() * 10) + 1;
     randomNumber = randomNumber.toString();
     document.getElementsByClassName("bg-img")[0].style.backgroundImage = 'url(./src/main-bg/' + randomNumber + '.jpg)';
-
-    // 設定滑鼠跟隨
-    let circle = document.getElementById("cursor_circle");
-
-    window.addEventListener("mousemove",function(e){
-    let x = e.clientX;
-    let y = e.clientY;
-    circle.style.left = x-14+"px";
-    circle.style.top = y-14+"px";
-    
-    })
 
     // 時鐘
     today = new Date();
