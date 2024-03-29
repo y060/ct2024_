@@ -17,6 +17,26 @@ body{
     overflow-y: scroll;
 }
 
+/* scrollbar */ 
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-button{
+}
+::-webkit-scrollbar-track-piece{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 7px;
+    background-color: var(--dark-secondary-color);
+    opacity: .4;
+}
+::-webkit-scrollbar-track{
+    box-shadow: transparent;
+}
+
+
+/* profile */
 .profile{
     margin: 2rem;
     position: relative;
@@ -38,6 +58,7 @@ body{
 }
 
 
+/* float folder */
 @keyframes float-animation{
     from { transform: translateY(0); }
     to { transform: translateY(15px); }
@@ -60,6 +81,7 @@ body{
 }
 
 
+/* progress pie chart */
 #progress_chart{
     position: relative;
     display: flex;
@@ -85,6 +107,7 @@ body{
 }
 
 
+/* content */
 #content{
     margin-bottom: 10rem;
 }
