@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // 設定滑鼠跟隨
     var circle = document.getElementById("cursor_circle");
     window.addEventListener("mousemove", function(e){
-        let x = e.clientX;
-        let y = e.clientY;
+        let x = e.pageX;
+        let y = e.pageY;
         circle.style.left = x-14+"px";
         circle.style.top = y-14+"px";
     })
