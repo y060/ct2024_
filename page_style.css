@@ -109,6 +109,9 @@ body{
 
 
 /* progress table */
+#progress{
+    margin-left: 5vw;
+}
 #progress_table{
     position: relative;
     border-top: 1px solid var(--dark-color);
@@ -194,6 +197,7 @@ body{
 
 /* content */
 #content{
+    margin-top: -2rem;
     margin-bottom: 10rem;
 }
 .title{
@@ -212,9 +216,12 @@ body{
     font-weight: bold;
 }
 #content h2{
-    padding-top: 1.5rem;
+    padding-top: 2.7rem;
     font-size: 1.8rem;
     color: var(--dark-secondary-color);
+}
+#content h2:first-of-type{
+    padding-top: 1.2rem;
 }
 #content h3{
     padding-top: 1.5rem;
@@ -232,6 +239,10 @@ body{
 
 @media (max-width: 576px) {
     #progress{
-        height: calc(100vh - 7rem);
+        min-height: calc(100vh - 7rem);
+        margin: auto;
+    }
+    #content{
+        margin-top: 0;
     }
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="../style.css" rel="stylesheet">
+    <link href="../page_style.css" rel="stylesheet">
+    <script src="../script.js"></script>
+    <script src="../page_script.js"></script>
+
+    <title>作業二｜112-2 字體設計與文字編碼</title>
+</head>
+<body>
+    <div id="preloader"></div>
+    <div id="cursor_circle"></div>
+
+    <div class="profile">
+        <div class="profile-photo">
+            <img src="../src/main-bg/6.jpg">
+        </div>
+        <p>@y060</p>
+    </div>
+
+    <main class="w-100 row flex-row-reverse justify-content-center" style="margin: auto;">
+
+        <div id="progress" class="col-10 col-sm-3">
+            <div id="progress_chart">
+                <svg id="progress_pie" viewBox="0 0 100 100" style="transform: rotate(-90deg)">
+                    <circle id="track" r="35" cx="50" cy="50" fill="transparent" stroke="#2b3035" stroke-width="5px"></circle>
+                    <circle id="my_progress" r="35" cx="50" cy="50" fill="transparent" stroke="#5f7279" stroke-width="9px" stroke-linecap="round"></circle>
+                </svg>
+                <p id="progress_score">
+                    <span id="my_score"></span><span id="full_score"></span>
+                </p>
+            </div>
+            <table id="progress_table">
+                <tr>
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">3</td>
+                    <td>Simple baseline<br>套件安裝完成截圖</td>
+                </tr>
+                <tr class="split-table">
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">4</td>
+                    <td>Medium baseline<br>稿紙.pdf成果截圖</td>
+                </tr>
+                <tr class="table-split">
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">3</td>
+                    <td>Strong baseline<br>將pdf壓縮上傳並在作品集建立連結</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="content" class="col-10 col-sm-6">
+            <div class="title">
+                <p>112-2 字體設計與文字編碼</p>
+                <h1>作業二</h1>
+            </div>
+            <hr class="title-hr">
+
+            <h2>心得</h2>
+            <p>
+                　　稿紙製作是一個很重要的事情，像是我自己名字就有比較不常見的字，如果就用教育部常用字來製作稿紙的話，我做的字體裡，我的名字一定不會是我自己手寫的。字體裡作者的名字還得靠AI生成，這件事其實還滿幽默。
+	            <br>　　很感謝這次有告訴我們該如何生成字體稿紙，以後我會再將自己的名字新增到自製字體裡的。
+            </p>
+
+            <h2>截圖資料</h2>
+            <p>套件安裝完成</p>
+            <img src="./src/simple.png">
+
+            <p>稿紙成功生成結果</p>
+            <img src="./src/medium.png">
+
+        </div>
+
+    </main>
+
+    <a class="folder" href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+            <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z"/>
+        </svg>
+    </a>
+
+</body>
+<script>
+    AOS.init();
+
+    // 設定滑鼠跟隨
+    let circle = document.getElementById("cursor_circle");
+
+    window.addEventListener("mousemove",function(e){
+    let x = e.clientX;
+    let y = e.clientY;
+    circle.style.left = x-14+"px";
+    circle.style.top = y-14+"px";
+    
+    })
+</script>
+</html>
