@@ -227,3 +227,11 @@ body{
     width: 100%;
     margin-bottom: 1rem;
 }
+
+
+
+@media (max-width: 576px) {
+    #progress{
+        height: calc(100vh - 7rem);
+    }
+}
