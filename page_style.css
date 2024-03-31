@@ -6,6 +6,7 @@
     font-family: "Fira Code";
     src: url(./hw01/src/FiraCode-Regular.ttf);
 }
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 
 
 body{
@@ -104,6 +105,90 @@ body{
 #full_score{
     color: var(--theme-color);
     opacity: .7;
+}
+
+
+/* progress table */
+#progress_table{
+    position: relative;
+    border-top: 1px solid var(--dark-color);
+    text-align: left;
+    vertical-align: middle;
+}
+/* #progress_table .split-table{
+    position: relative;
+}
+#progress_table .split-table::before, */
+#progress_table::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: -3px;
+    display: block;
+    border-top: 1px solid var(--dark-color);
+}
+#progress_table::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+    display: block;
+    border-bottom: 1px solid var(--dark-color);
+}
+#progress_table tr,
+#progress_table th,
+#progress_table td{
+    padding: .5rem;
+    border-bottom: 1px solid var(--dark-color);
+}
+#progress_table:not(.score, .checkbox-td){
+    font-size: .9rem;
+}
+
+.progress-check{
+    width: 2.5rem;
+    height: 1.2rem;
+    position: relative;
+    -webkit-appearance: initial;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border-radius: .6rem;
+    background: var(--dark-secondary-color);
+}
+.progress-check::after{
+    content: "";
+    width: 1.1rem;
+    height: 1.1rem;
+    margin: 0 0 0 .1rem;
+    position: absolute;
+    top: .05rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--dark-color);
+    background-image: url("./src/icon/unchecked.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    color: var(--dark-color);
+    font-family: "IBM Plex Sans Arabic";
+    font-size: 1rem;
+
+    transform: translate(0, 0);
+    transition: all .5s ease-in-out;
+}
+.progress-check::after:hover{
+    color: var(--dark-color);
+}
+.progress-check:checked::after{
+    content: "";
+    /* background-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="1.1rem" height="1.1rem" fill="#5f7279" class="bi bi-check-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>');; */
+    background-image: url("./src/icon/checked.svg");
+    transform: translate(1.2rem, 0);
+    transition: all .5s ease-in-out;
 }
 
 

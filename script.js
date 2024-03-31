@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let y = e.pageY;
         circle.style.left = x > (window.innerWidth-70)? window.innerWidth-50+"px": x-14+"px";
         circle.style.top = y-14+"px";
-        console.log("x: ", x, "innerWidth: ", window.innerWidth)
-        console.log( x > (window.innerWidth-70))
+        // console.log("x: ", x, "innerWidth: ", window.innerWidth)
+        // console.log( x > (window.innerWidth-70))
     })
 
 })
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 window.onload = () => {
     var preloader = document.getElementById("preloader");
     preloader.style.display = "none";
-    console.log("hi")
+    console.log("")
 }
 
 

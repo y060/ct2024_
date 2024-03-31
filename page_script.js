@@ -31,8 +31,8 @@ function setProgress(){
     var circumference = 2 * Math.PI * r;
     var offset = circumference * (1 - progress/sum);
 
-    console.log("progress = ", progress, "sum = ", sum, "progress/sum = ", progress/sum)
-    console.log("circumference = ", circumference, "; offset = ", offset)
+    // console.log("progress = ", progress, "sum = ", sum, "progress/sum = ", progress/sum)
+    // console.log("circumference = ", circumference, "; offset = ", offset)
 
     progress_pie.setAttribute("stroke-dasharray", circumference.toString() + "px");
     progress_pie.setAttribute("stroke-dashoffset", offset.toString() + "px");
