@@ -33,6 +33,23 @@ body{
 
     animation: fadein 1.25s ease-in;
 }
+
+@keyframes body-preload-ani{
+    0%{ background-position:0% 40% }
+    50%{ background-position:100% 61% }
+    100%{ background-position:0% 40% }
+}
+.body-preload{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(150deg, var(--dark-bg), var(--theme-color));
+    background-size: 400% 400%;
+    animation: body-preload-ani 5s ease infinite;
+}
+.body-preload *{
+    display: none;
+}
+
 a,
 a:hover,
 button:hover,
@@ -89,7 +106,7 @@ input[type=checkbox]:hover{
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 1100px) {
     #cursor_circle{
         display: none;
     }

@@ -239,8 +239,11 @@ body{
 
 @media (max-width: 576px) {
     #progress{
+        /* width: 100%; */
         min-height: calc(100vh - 7rem);
         margin: auto;
+
+        /* background-color: var(--dark-teriary-bg); */
     }
     #content{
         margin-top: 0;

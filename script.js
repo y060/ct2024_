@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 window.onload = () => {
     var preloader = document.getElementById("preloader");
     preloader.style.display = "none";
-    console.log("")
+    document.body.classList.remove("body-preload");
 }
 
 
