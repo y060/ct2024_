@@ -113,6 +113,7 @@ body{
     margin-left: 5vw;
 }
 #progress_table{
+    width: 100%;
     position: relative;
     border-top: 1px solid var(--dark-color);
     text-align: left;
@@ -146,6 +147,10 @@ body{
 }
 #progress_table:not(.score, .checkbox-td){
     font-size: .9rem;
+}
+
+#progress_table .tr-title{
+    font-weight: bold;
 }
 
 .progress-check{

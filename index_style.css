@@ -151,7 +151,7 @@ main{
 }
 .hw-cards li{
     min-width: 15rem;
-    height: 10rem;
+    height: 11rem;
     margin: .5rem;
     padding: .5rem 1rem;
     position: relative;

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="../style.css" rel="stylesheet">
+    <link href="../page_style.css" rel="stylesheet">
+    <script src="../script.js"></script>
+    <script src="../page_script.js"></script>
+
+    <title>作業四｜112-2 字體設計與文字編碼</title>
+</head>
+<body class="body-preload">
+    <div id="preloader"></div>
+    <div id="cursor_circle"></div>
+
+    <div class="profile">
+        <div class="profile-photo">
+            <img src="../src/main-bg/3.jpg">
+        </div>
+        <p>@y060</p>
+    </div>
+
+    <main class="w-100 row flex-row-reverse justify-content-center" style="margin: auto;">
+
+        <div id="progress" class="col-10 col-sm-3">
+            <div id="progress_chart">
+                <svg id="progress_pie" viewBox="0 0 100 100" style="transform: rotate(-90deg)">
+                    <circle id="track" r="35" cx="50" cy="50" fill="transparent" stroke="#2b3035" stroke-width="5px"></circle>
+                    <circle id="my_progress" r="35" cx="50" cy="50" fill="transparent" stroke="#5f7279" stroke-width="9px" stroke-linecap="round"></circle>
+                </svg>
+                <p id="progress_score">
+                    <span id="my_score"></span><span id="full_score"></span>
+                </p>
+            </div>
+            <table id="progress_table">
+                <tr class="tr-title">
+                    <td colspan="3">Simple baseline</td>
+                </tr>
+                <tr>
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">1</td>
+                    <td>下載專案</td>
+                </tr>
+                <tr>
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">1</td>
+                    <td>下載Node.js</td>
+                </tr>
+                <tr>
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">1</td>
+                    <td>安裝專案</td>
+                </tr>
+                <tr>
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">1</td>
+                    <td>安裝Node.js</td>
+                </tr>
+                <tr class="tr-title split-table">
+                    <td colspan="3">Medium baseline</td>
+                </tr>
+                <tr>
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">1</td>
+                    <td>png轉換成svg</td>
+                </tr>
+                <tr>
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">2</td>
+                    <td>svg轉換成svg去除黑塊</td>
+                </tr>
+                <tr>
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">1</td>
+                    <td>svg轉換成ttf、woff2</td>
+                </tr>
+                <tr class="tr-title split-table">
+                    <td colspan="3">Strong baseline</td>
+                </tr>
+                <tr>
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">1</td>
+                    <td>字體安裝</td>
+                </tr>
+                <tr>
+                    <td class="checkbox-td"><input type="checkbox" class="progress-check" checked></td>
+                    <td class="score">1</td>
+                    <td>word實際應用</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="content" class="col-10 col-sm-6">
+            <div class="title">
+                <p>112-2 字體設計與文字編碼</p>
+                <h1>作業四</h1>
+            </div>
+            <hr class="title-hr">
+
+            <h2>心得</h2>
+            <p>
+                　　終於成功製作出自己的字體了！在word裡面能夠成功打出「自己手寫的字」超級有成就感。突然想到如果小時候知道可以做字體，那麼抄寫課文的時候都不需要抄個一兩個小時抄到手腕痠痛了。
+                <br>　　自己的字體適合運用在很多狀況，像是想要做電子卡片給人時，用標楷體、思源黑體、思源宋體都有點奇怪，這種時候換成自己的字體立刻就有卡片的感覺了！做海報時嫌棄網路上字體都太整齊，也可以換上自己的字體，馬上別有一番風味。總而言之，很感謝有這個機會可以做出專屬自己的字體！感覺很快就能用上了。
+            </p>
+
+            <h2>截圖資料</h2>
+            <img src="./src/result.png">
+        </div>
+
+    </main>
+
+    <a class="folder" href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+            <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z"/>
+        </svg>
+    </a>
+
+</body>
+<script>
+    AOS.init();
+
+    // 設定滑鼠跟隨
+    let circle = document.getElementById("cursor_circle");
+
+    window.addEventListener("mousemove",function(e){
+    let x = e.clientX;
+    let y = e.clientY;
+    circle.style.left = x-14+"px";
+    circle.style.top = y-14+"px";
+    
+    })
+</script>
+</html>
